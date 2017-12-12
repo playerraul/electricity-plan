@@ -533,7 +533,7 @@ $(document).ready(function(){
 	
 		  
 	// Location Placeholder
-	$(".location_input").attr("placeholder", "Your Location");
+	$(".location_input").attr("placeholder", "Tariff type");
 	$(".comboboxCategory .location_input").attr("placeholder", "Food");
 	$(".postSubmitCat .location_input").attr("placeholder", "Chose one or more than one categories");
 	
