@@ -3,26 +3,14 @@ import '../App.css';
 import Appliance from './Appliance';
 
 class AppliancesPanel extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            appliances: Array(10).fill(null),
-        };
-    }
-    handleChange(i, event) {
-        // alert(i);
-        // alert(event.target.value);
-        const appliances = this.state.appliances.slice();
-        appliances[i] = event.target.value;
-        this.setState({ appliances: appliances });
-    }
-
+  
     renderAppliance(i) {
         return (
             <Appliance
                 appliance={this.props.appliances[i]}
+                value={this.props.appliancesVal[i]}
                 key={this.props.appliances[i].name}
-                onChange={(e) => this.handleChange(i,e)} />
+                onChange={(e) => this.props.onChange(i,e)} />
         );
     }
 

@@ -14,7 +14,7 @@ class Appliance extends Component {
             <br /> {appliance.name}
           </span>
         </a>
-        <input type="text" name="" className="lp-appliance-input" onChange={(e) => this.props.onChange(e)}/>
+        <input type="text" name="" value={this.props.value} className="lp-appliance-input" onChange={(e) => this.props.onChange(e)}/>
       </li>
     );
   }
