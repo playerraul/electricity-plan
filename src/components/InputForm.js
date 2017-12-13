@@ -3,43 +3,14 @@ import '../App.css';
 import AppliancesPanel from './AppliancesPanel';
 
 class InputForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      appliancesVal: Array(10).fill(null),
-      tariffType: 'single',
-    };
-
-    // this.handleChange = this.handleChange.bind(this);
-    this.handleSelect = this.handleSelect.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-
-  handleChange(i, event) {
-    const appliancesVal = this.state.appliancesVal.slice();
-    appliancesVal[i] = event.target.value;
-    this.setState({
-      appliancesVal: appliancesVal,
-    });
-  }
-
-  handleSelect(event) {
-    this.setState({ tariffType: event.target.value });
-  }
-
-  handleSubmit(event) {
-    alert('submitted: ' + this.state.tariffType + this.state.appliancesVal);
-    event.preventDefault();
-  }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <div>
         <AppliancesPanel
           appliances={this.props.appliances}
-          appliancesVal={this.state.appliancesVal}
-          onChange={(i,e) => this.handleChange(i,e)} />
+          appliancesVal={this.props.appliancesVal}
+          onChange={(i,e) => this.props.onChange(i,e)} />
         <div class="lp-home-banner-contianer">
           <div class="lp-home-banner-contianer-inner">
             <div class="container">
@@ -50,7 +21,7 @@ class InputForm extends Component {
                     <div class="lp-search-bar-left">
                       <div class="ui-widget border-dropdown">
                         Tariff type
-                        <select className="" value={this.state.tariffType} onChange={this.handleSelect}>
+                        <select className="" value={this.props.tariffType} onChange={(e) => this.props.onSelect(e)}>
                           <option value="single">Single rate</option>
                           <option value="time">Time of use</option>
                           <option value="both">Not sure</option>
@@ -59,7 +30,7 @@ class InputForm extends Component {
                     </div>
 
                     <div className="lp-search-bar-right">
-                      <input type="submit" value="Submit" className="lp-search-btn" />
+                      <button className="lp-search-btn" onClick={this.props.onSubmit} >Submit</button>
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -68,7 +39,7 @@ class InputForm extends Component {
             </div>
           </div>
         </div>
-      </form>
+        </div>
     );
   }
 }
