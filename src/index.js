@@ -45,8 +45,27 @@ const APPLIANCES = [
     { name: 'Air conditioner', image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATvSURBVGhD7ZlbiFVVGMdHHcfbpEh5gUin6IJdELW0C4XTBQqD5q3rQ0YPJYbUQyIS5WAZQ1iQiXQhULR6KKSMpHoRIiithyDogpQF1oPaFTWxGX//tf97z97nrDOekTmxN80P/rPW+r5v7fWtfdZZZ+09bSkDAwM9/f39e9Df1EsNOR5Er6DznH4ChuccUynI+zBaEiZBu8fGo2glOjs4SgqpjiXHS9F7zvsHion6NPbY8IhjKwEpjyfnL537PZpI+p04xzGVgdzXKnHKjZpZwL5SQDrj0XTUaVMUJvCwcqfcXMqJkNgy5US5y6YopZwIycwkjTmuFyZCtYP6QtXzYCvlRF5H2jnXozuVE+UudBv6Hh1BhR2VdrkmwvDaUreifuVC8U++FNS/Rle4S4B2Ob8jJHQ12uuUArT/RI9SbXdYBvbyTYQU9Kk8gA4mGSXQ/he9RnW2QzOwl3JpfZpkEhL7yeUhlC6z31ByHDG0S/llfwYdQHej25UTpb7sF6J3UXIUyYGtlEtrMglNUp2y7neE+gxXM7CV88ueQmLdaD961aYopZ9Is4xOpGxEJwIXVE1M4AnKuolUljAR/vzixrcU+6okcj5CqdzXaSJvuLHBS68SkO8k9LNz75ZhMRI6QndjX1QFkWsfpSbxBcXYdHbbZawoS8MkBI05TOaYrJQ6sEXXZFlEjkcpletOT2EQjE/buRdNsLl0kJuOLyfRCXSxzYNgPAt9l5vMvWgxzfy6rH1C08l0lpt10GcM/ktQw5d+xOgIP49ymk2yTdN4NVpKnB6D05WzzuH14NQbvDCZGPgOOFSxm2zTnbnL5gLYdzhGG8mtNmfgGof9fcf8ga6VnTKcfhuBfwvFuHCRRhA0BT2E3kQf1Wi7Y/TphedrQfWz0DkHtrl2B2h/YFcGtgV2B2jvsH0Jqh17N9qMwmRHBMbUcsgeSamHBPJg7kS/hwAg5kW7MrDNQmGpCOq9dv13MOhC9BZ6iRyir1vxXYfeRhvRVJsLYL8FvYM2oPBgNcqZwN3T+u5yMwp+LcGr0Lk2RSGunRidMBrugC2BAfV6Rmtar2qW21wAt7benY7Tm5Aeuwpg1yTSf23oh27wl7qVMFAnA2Y7FuyzqwD2rsSdQJfddhXAfqVDArTrNo6WwFi60z8mw4aBt9lVAJfeihxOokLc83YVwD4DZf+3pL7WrtbDYPOQ/hmpE+h0m+vAr51NL6d7iZtscx34b0B697uGuA6bRzkt3C0tq+vR5TYNCfHtSGeki2waEmInEqtD4VybWgMDbGMwrWOxyuYohGnr/djxOq1Gz2MphHUgHdMVfxzdZNfIwvV1t/Lnq6/sioL/fIcGaH9oVxT81zg0QHurXSMPF//G42ig6G6Vgl/P1L86XPF9dkXBr93rL4cr/jG7Rh6u38UAL1A+RRk9O+Uh5jK0Ca2mT+FNegzi9Ou+Ba0kfuhj+v8S7oq+sDqdntEzAP0moGVovk3Dgn5T0R2oqV2vIVwge7tC/Umbm4IuugmfuK82ifvtagridRRKH71PUNxs1/Cgow5zJ3UhoYva1RR00fvZDPoPuWvVQvyN7hqg/bJdw4fOn/s6ulB4zG0W4rWswptAQX29XU1Bl9n0ye9iD9o1fOg8E/Wix9EUm5uG8fWpPEvfFZR1/14+HfRbgPrQffQfY3OEtrZTvSutsNZsJ1cAAAAASUVORK5CYII=" },
 ]
 const PLANS = [
-    {name:'plan0',retailer:'r0',score:1},
-    {name:'plan1',retailer:'r1',score:0.5},
+    {name:'residential 20',retailer:'1st energy',type:'Single rate',score:10},
+    {name:'easy saver 10%',retailer:'red energy',type:'Single rate',score:10},
+    {name:'origin maximiser',retailer:'origin',type:'Single rate',score:10},
+    {name:'energy with benefits',retailer:'mojo power',type:'Single rate',score:10},
+    {name:'anytime saver',retailer:'energy australia',type:'Single rate',score:10},
+    {name:'flexi saver plan',retailer:'energy australia',type:'Single rate',score:10},
+    {name:'NRMA 26',retailer:'simply energy',type:'Single rate',score:10},
+    {name:'rabbitohs plus 20',retailer:'simply energy',type:'Single rate',score:10},
+    {name:'rate saver',retailer:'covau',type:'Single rate',score:10},
+    {name:'no term market offer',retailer:'dodo',type:'Single rate',score:10},
+    {name:'residential 20',retailer:'1st energy',type:'Time of use',score:10},
+    {name:'easy saver 10% ',retailer:'red energy',type:'Time of use',score:10},
+    {name:'origin maximiser',retailer:'origin',type:'Time of use',score:10},
+    {name:'origin saver',retailer:'origin',type:'Time of use',score:10},
+    {name:'standing offer',retailer:'pooled energy',type:'Time of use',score:10},
+    {name:'energy with benefits',retailer:'mojo power',type:'Time of use',score:10},
+    {name:'anytime saver',retailer:'energy australia',type:'Time of use',score:10},
+    {name:'flexi saver plan',retailer:'energy australia',type:'Time of use',score:10},
+    {name:'click EV',retailer:'click energy',type:'Time of use',score:10},
+    {name:'TOU',retailer:'dodo',type:'Time of use',score:10},
 ]
+
 ReactDOM.render(<App appliances={APPLIANCES} plans={PLANS} />, document.getElementById('root'));
 registerServiceWorker();

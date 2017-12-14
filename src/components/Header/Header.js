@@ -13,7 +13,7 @@ class Header extends Component {
               <div class="col-md-4 col-xs-6 lp-logo-container">
                 <div class="lp-logo">
                   <a href="index.html">
-                    <img src="images/logo.png" alt="" />
+                    {/* <img src="images/logo.png" alt="" /> */}
                   </a>
                 </div>
               </div>

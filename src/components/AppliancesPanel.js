@@ -22,18 +22,18 @@ class AppliancesPanel extends Component {
                         <div class="col-md-12">
 
                             <div class="text-center lp-search-description">
-                                <p className="lp-banner-browse-txt">Tell us your habbit of electricity</p>
-                                <img src="images/banner/banner-arrow.png" alt="banner-arrow" class="banner-arrow" />
+                                <p className="lp-banner-browse-txt">How many hours do you use the appliances?</p>
+                                {/* <img src="images/banner/banner-arrow.png" alt="banner-arrow" class="banner-arrow" /> */}
                             </div>
                             <br />
-                            <ul class="lp-home-categoires padding-left-0 margin-bottom-20">
+                            <ul class="lp-home-categoires padding-left-0 margin-bottom-40">
                                 <h3>Kitchen</h3>
                                 {this.renderAppliance(0)}
                                 {this.renderAppliance(1)}
                                 {this.renderAppliance(2)}
                                 {this.renderAppliance(3)}
                             </ul>
-                            <ul class="lp-home-categoires padding-left-0 margin-bottom-20">
+                            <ul class="lp-home-categoires padding-left-0 margin-bottom-40">
                                 <h3>Laundry</h3>
                                 {this.renderAppliance(4)}
                                 {this.renderAppliance(5)}

@@ -8,13 +8,13 @@ class Plan extends Component {
     return (
       <div class="price-plan-box lp-border-radius-8">
         <div class="price-plan-box-upper">
-          <h1 class="clearfix">
+          <h3 class="clearfix lp-color-white">
             <span class="pull-left">{plan.name}</span>
-            <span class="pull-right">NO.{this.props.rank}</span>
-          </h1>
+            <span class="pull-right">NO. {this.props.rank}</span>
+          </h3>
           <p class="clearfix">
             <span class="pull-left">{plan.retailer}</span>
-            {/* <span class="pull-right">Duration  30 days</span> */}
+            <span class="pull-right">{plan.type}</span>
           </p>
         </div>
       </div>
