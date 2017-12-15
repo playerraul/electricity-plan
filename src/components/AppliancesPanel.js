@@ -22,7 +22,7 @@ class AppliancesPanel extends Component {
                         <div class="col-md-12">
 
                             <div class="text-center lp-search-description">
-                                <p className="lp-banner-browse-txt">How many hours do you use the appliances?</p>
+                                <p className="lp-banner-browse-txt">How many hours do you use the appliances each week?</p>
                                 {/* <img src="images/banner/banner-arrow.png" alt="banner-arrow" class="banner-arrow" /> */}
                             </div>
                             <br />
